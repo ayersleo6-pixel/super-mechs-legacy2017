@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
     const ruffle = window.RufflePlayer.newest();
     const player = ruffle.createPlayer();
     document.getElementById("game").appendChild(player);
-    player.load("bmmLoader.swf");
+    player.load("bmmloader.swf"); // <-- THIS LINE (fixed)
 });
 </script>
 
