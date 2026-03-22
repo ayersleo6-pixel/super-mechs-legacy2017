@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SuperMechs Test</title>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+
+<body>
+
+<div id="game"></div>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.addEventListener("load", () => {
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+    document.getElementById("game").appendChild(player);
+    player.load("bmmLoader.swf");
+});
+</script>
+
+</body>
+</html>
